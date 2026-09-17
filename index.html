@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weatherly | Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-app">
+
+        <!-- Header -->
+        <header class="top-bar">
+
+            <div class="brand">
+                <div class="brand-icon">☁</div>
+
+                <div>
+                    <h1>Weatherly</h1>
+                    <p>Weather at a glance</p>
+                </div>
+            </div>
+
+            <div class="date">
+                <span id="day">Monday</span>
+                <small id="date">September 16, 2026</small>
+            </div>
+
+        </header>
+
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Search for a city..."
+                >
+
+                <button id="search-btn">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+        <div id="error-message" class="error-message"></div>
+
+
+        <!-- Main Weather -->
+        <section class="main-weather">
+
+            <div class="location">
+
+                <span class="location-icon">📍</span>
+
+                <div>
+                    <h2 id="city-name">Lahore</h2>
+                   <p id="country-name">Pakistan</p>
+                </div>
+
+            </div>
+
+
+            <div class="weather-main">
+
+                <div class="weather-visual">
+                    <div class="sun-glow"></div>
+                    <div class="weather-emoji" id="weather-icon">
+                        🌤️
+                    </div>
+                </div>
+
+                <div class="temperature">
+
+                    <h2>
+                        <span id="temperature">28</span>°
+                    </h2>
+
+                    <p id="condition">
+                        Partly Cloudy
+                    </p>
+
+                    <span class="feels">
+                        Feels like <strong id="feels-like">30°</strong>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Weather Details -->
+        <section class="details-grid">
+
+            <div class="detail-card">
+
+                <div class="detail-icon humidity">
+                    💧
+                </div>
+
+                <div>
+                    <span>Humidity</span>
+                    <strong id="humidity">65%</strong>
+                </div>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <div class="detail-icon wind">
+                    💨
+                </div>
+
+                <div>
+                    <span>Wind Speed</span>
+                    <strong id="wind">12 km/h</strong>
+                </div>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <div class="detail-icon visibility">
+                    👁️
+                </div>
+
+                <div>
+                    <span>Visibility</span>
+                    <strong id="visibility">10 km</strong>
+                </div>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <div class="detail-icon pressure">
+                    🌡️
+                </div>
+
+                <div>
+                    <span>Pressure</span>
+                    <strong id="pressure">1012 hPa</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Today's Forecast -->
+        <section class="forecast-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Today's Forecast</h2>
+                    <p>Hourly weather conditions</p>
+                </div>
+
+                <span>24 Hours</span>
+
+            </div>
+
+
+            <div class="forecast-list">
+
+                <div class="forecast-card">
+                    <span>Now</span>
+                    <div>🌤️</div>
+                    <strong>28°</strong>
+                </div>
+
+                <div class="forecast-card">
+                    <span>12 PM</span>
+                    <div>☀️</div>
+                    <strong>30°</strong>
+                </div>
+
+                <div class="forecast-card">
+                    <span>2 PM</span>
+                    <div>☀️</div>
+                    <strong>32°</strong>
+                </div>
+
+                <div class="forecast-card">
+                    <span>4 PM</span>
+                    <div>🌤️</div>
+                    <strong>31°</strong>
+                </div>
+
+                <div class="forecast-card">
+                    <span>6 PM</span>
+                    <div>🌥️</div>
+                    <strong>28°</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sunrise / Sunset -->
+        <section class="sun-section">
+
+            <div class="sun-card">
+
+                <div class="sun-icon">
+                    🌅
+                </div>
+
+                <div>
+                    <span>Sunrise</span>
+                    <strong id="sunrise">5:48 AM</strong>
+                </div>
+
+            </div>
+
+
+            <div class="sun-card">
+
+                <div class="sun-icon">
+                    🌇
+                </div>
+
+                <div>
+                    <span>Sunset</span>
+                    <strong id="sunset">6:21 PM</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>Weather data powered by Weather API</p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
