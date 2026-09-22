@@ -1,4 +1,4 @@
-// Weatherly backend
+// Weatherly backend - Cloudflare
 export default {
   async fetch(request) {
 
